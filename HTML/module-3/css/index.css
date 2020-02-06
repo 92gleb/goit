@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    line-height: 24px;
+    font-size: 14px;
+}
+.nav {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin: 88px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #03a9f4;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
+article:nth-child(even) {
+    margin: 0;
+}
+img + p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b4ad9e;   
+}
+h2 {
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.button {
+    font-size: 20px;
+    width: 164px;
+    height: 60px;
+    border: 1px solid;
+    display: block;
+    box-shadow: 1px 1px 1px black;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
