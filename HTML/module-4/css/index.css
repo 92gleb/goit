@@ -11,9 +11,8 @@
 }
 .header {
     width: 1110px;
-    height: 30px;
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 35px;
+    padding-bottom: 92px;
 }
 .logo {
     float: left;
@@ -26,6 +25,7 @@
 }
 .nav {
     float: right;
+    padding-top: 8px;
 }
 .clearfix::after {
     display: table;
@@ -62,7 +62,7 @@
 }
 .section1 {
     width: 1110px;
-    height: 840px;
+    margin-bottom: 100px;
 }
 h2 {
     text-transform: uppercase;
@@ -75,7 +75,7 @@ h2::after {
     background-color: #1abc9c;
     display: block;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 28px;
     margin-bottom: 92px;
     content: "";
 }
@@ -83,7 +83,6 @@ h2::after {
     float: left;
     list-style: none;
     width: 255px;
-    height: 320px;
     background-color: #e9f0fd;
 }
 .item:not(:nth-child(4n)) {
@@ -92,7 +91,7 @@ h2::after {
 .item:not(:nth-last-child(-n+4)) {
     margin-bottom: 30px;
 }
-.name:hover {
+.item:hover .name {
     background-color: #1abc9c;
 }
 .name {
@@ -101,6 +100,7 @@ h2::after {
     text-decoration: none;
     width: 200px;
     height: 40px;
+    padding: 10px;
     background-color: #323232;
     color: #ffffff;
     text-align: center;
@@ -112,17 +112,17 @@ h2::after {
     height: 40px;
     font-size: 18px;
     font-weight: 900;
+    padding: 10px;
     color: #ffffff;
     background-color: #8c8c8c;
     text-align: center;
 }
 .section2 {
     width: 1110px;
-    height: 650px;
+    padding-bottom: 80px;
 }
 .newsitem {
     width: 350px;
-    height: 495px;
     float: left;
     list-style: none;
 }
@@ -130,16 +130,19 @@ h2::after {
     margin-right: 30px;
 }
 .newsimg {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .line {
     font-family: 'Open Sans';
     font-weight: 600;
+    font-size: 18px;
+    color: #555252;
 }
 .paragraf {
     font-family: 'Open Sans';
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    color: #555252;
 }
 .line::after {
     width: 136px;
@@ -147,15 +150,17 @@ h2::after {
     background-color: #1abc9c;
     display: block;
     content: "";
-    margin-bottom: 30px;
-    margin-top: 15px;
+    margin-bottom: 26px;
+    margin-top: 13px;
 }
 .button {
-    width: 160px;
-    height: 50px;
+    width: 159px;
+    height: 51px;
     background-color: #4ec6ab;
     color: #ffffff;
     border: none;
-    border-radius: 4px;   
+    border-radius: 3px;
+    letter-spacing: 0px; 
+    font-size: 16px;  
 }
   
