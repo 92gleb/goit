@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+/* EXERCISE 1 */
+.wrapper {
+    width: 960px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.list {
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.item {
+    display: inline-block;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+.item:hover {
+    color: lawngreen;
+}
+
+/* EXERCISE 2 */
+.wrap2 {
+    width: 470px;
+    color: #626262;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+img {
+    padding-bottom: 20px;
+}
+.paragraf {
+    font: 300 14px 'Ubuntu', sans-serif;
+    color: #b4ad9e;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.h2 {
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+/* EXERCISE 3 */
+.wrap3 {
+    width: 470px;
+    display: inline-block;
+    color: #626262;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* .wrap3:not(:nth-child(2n)) {
+    margin-right: 10px;
+} */
+/* EXERCISE 4 */
+.wrapper>h2 {
+    text-align: center;
+}
