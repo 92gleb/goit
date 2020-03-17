@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.list {
+    list-style: none; 
+}
+.item {
+    float: left;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+.item:hover {
+    color: lawngreen;
+    border: 1px solid #000000;
+}
+/* EXERCISE 2 */
