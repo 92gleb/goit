@@ -53,42 +53,93 @@
     color: #1abc9c;
 }
 .section1 {
-    background-image: url(../img/background.jpg);
-    height: 600px;
-    background-color: #323232;
+    position: relative;
 }
 .arrow {
-    width: 103px;
+    position: absolute;
+    top: 225px;
+    width: 104px;
     height: 104px;
     background-color: #4ec6ab;
-    font-size: 100px;
     color: #ffffff;
-    text-align: right;
+    cursor: pointer;
+    opacity: 0.65;
+    border: none;
+    z-index: 1;
+    font-size: 100px;
+}
+.arrow:hover {
+    background-color: #1abc9c;
+    opacity: 1;
+}
+.left {
+    left: 245px;
+}
+.right {
+    right: 245px;
+}
+.slides {
+    list-style: none;
+    position: relative;
+}
+.overlay-img {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background-color: #000002;
+    opacity: 0.48;
+}
+.slides img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+.title {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.subtitle {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 298px;
+    left: 430px;
 }
 
 .section2 {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 96px;
+    padding-top: 96px;
     width: 100%;
     background-color: #e9f0fd;
 }
-h2 {
+h3 {
     text-transform: uppercase;
     text-align: center;
+    color: #515151;
     font-size: 48px;
 }
-h2::after {
+h3::after {
     width: 164px;
     height: 7px;
     background-color: #1abc9c;
     display: block;
-    margin: 28px auto 92px;
+    margin: 28px auto 76px;
     content: "";
 }
 .list {
     margin-left: 245px;
 }
 .item {
+    position: relative;
     float: left;
     list-style: none;
     width: 255px;
@@ -103,9 +154,61 @@ h2::after {
 .item:hover .price {
     background-color: #7fd9c7;
 }
-/* .item:hover .item {
-
-} */
+.overlay {
+    position: absolute;
+    width: 255px;
+    height: 281px;
+    background-color: #000000;
+    border: 10px solid #ffffff;
+    opacity: 0;
+}
+.item:hover .overlay {
+    opacity: 0.55;
+}
+.item:hover .link {
+    opacity: 1;
+}
+.link {
+    position: absolute;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 30px;
+    opacity: 0;
+}
+.link:hover {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
+.button1 {
+    width: 50px;
+    left: 44px;
+    top: 90px;
+}
+.button2 {
+    width: 50px;
+    left: 102px;
+    top: 90px;    
+}
+.button3 {
+    width: 50px;
+    left: 160px;
+    top: 90px;  
+}
+.button4 {
+    left: 44px;
+    top: 147px;
+    width: 166px;
+    background-color: #323232; 
+}
+li p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;  
+    display: inline-block;
+}
 .name {
     float: left;
     text-transform: uppercase;
