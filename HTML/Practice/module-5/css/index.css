@@ -3,8 +3,133 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* exercise 1 */
+/* .container {
+    position: relative;
+}
+.block1 {
+    width: 100%;
+    height: 1000px;
+    background: #c31432;
+    background: -webkit-linear-gradient(to top, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
+    position: absolute;
+    opacity: 0.3;
+    z-index: 1;
+}
 .block {
     width: 100%;
-    height: 100%;
-    
+    height: 1000px;
+    background-image: url(/HTML/module-5/img/background.jpg);
+    position: absolute;
+    margin-bottom: 100px;
+} */
+/* exercise 2 */
+.block3 {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: #424242;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.block4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.block4:nth-child(1) {
+    left: 0;
+    top: 0;
+    background-color: saddlebrown;
+}
+.block4:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-color: #c31432;
+}
+.block4:nth-child(3) {
+    right: 0;
+    top: 0;
+    background-color: yellowgreen;
+}
+.block4:nth-child(4) {
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #ee1122;
+}
+.block4:nth-child(5) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: #4914c3;
+}
+.block4:nth-child(6) {
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #fffc60;
+}
+.block4:nth-child(7) {
+    left: 0;
+    bottom: 0;
+    background-color: #c3148f;
+}
+.block4:nth-child(8) {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: #3ee2ff;
+}
+.block4:nth-child(9) {
+    right: 0;
+    bottom: 0;
+    background-color: #868b3a;
+}
+
+/* exercise 3 */
+.menu {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.menu-item {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    background-color: turquoise;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu-item:hover > .submenu {
+    display: block;
+}
+.menu-item:hover, .submenu-item:hover {
+    background-color: rgb(162, 2, 211);
+    color: rgb(255, 251, 251);
+}
+.submenu-item {
+    list-style: none;
+    padding: 10px;
+    background-color: turquoise;
+    display: inline-block;
+    width: 175px;
+    height: 50px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
 }
