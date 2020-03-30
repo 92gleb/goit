@@ -42,6 +42,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    transition: color 200ms linear;
 }
 .link::after {
     width: 50px;
@@ -51,6 +52,7 @@
     opacity: 0;
     content: "";
     margin: 10px auto;
+    transition: opacity 200ms linear;
 }
 .link:hover::after {
     opacity: 1;
@@ -102,22 +104,22 @@
     margin-bottom: 0;
 }
 .service-icon1::after {
-    background: url(../img/service-1_03.png) center no-repeat;
+    background: url(../img/service-1_03.png);
 }
 .service-icon2::after {
-    background: url(../img/service-2_03.png) center no-repeat;
+    background: url(../img/service-2_03.png);
 }
 .service-icon3::after {
-    background: url(../img/service-3_03_05.png) center no-repeat;
+    background: url(../img/service-3_03_05.png);
 }
 .service-icon4::after {
-    background: url(../img/service-4_03.png) center no-repeat;
+    background: url(../img/service-4_03.png);
 }
 .service-icon5::after {
-    background: url(../img/service-5_09.png) center no-repeat;
+    background: url(../img/service-5_09.png);
 }
 .service-icon6::after {
-    background: url(../img/service-6_03_13.png) center no-repeat;
+    background: url(../img/service-6_03_13.png);
 }
 .section1-item::after {
     content: "";
@@ -145,17 +147,103 @@
 }
 /* section2 */
 .section-paragraf {
+    width: 960px;
+    line-height: 24px;
     font-size: 15px;
     color: #999999;
     font-family: "Roboto";
     font-weight: 400;
     text-align: center;
+    margin: 0 auto 90px;
 }
 .section2-list {
     list-style: none;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+}
+.section2-item {
+    position: relative;
+}
+.section2-item::after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.team-photo {
+    position: relative;
+    z-index: 1;
+    transition: top 200ms linear, left 200ms linear;
+}
+.section2-item:hover .team-photo {
+    top: -10px;
+    left: -10px;
+}
+.section2-item:hover .overlay {
+    top: -10px;
+    left: -10px;
+    opacity: 0.85;
+}
+.overlay {
+    width: 381px;
+    height: 470px;
+    background-image: linear-gradient(0deg, #f0e290 0%, #e98a89 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: top 200ms linear, left 200ms linear, opacity 200ms linear;
+}
+.social-list {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 225px;
+    left: calc(50% - 10px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.social {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #fce38a;
+    opacity: 0;
+    transition: background-color 200ms linear, opacity 200ms linear;
+}
+.social:hover {
+    background-color: #95e1d3;
+}
+.section2-item:hover .social {
+    opacity: 1;
+}
+.social::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 56px;
+    opacity: 0.5;
+    background-color: #f38181;
+}
+.team-icon1 {
+    background-image: url(../img/social-1_06.png);
+}
+.team-icon2 {
+    background-image: url(../img/social-2_06.png);
+}
+.team-icon3 {
+    background-image: url(../img/social-3_06.png);
+}
+.team-icon4 {
+    background-image: url(../img/social-4.png);
 }
 .team-name {
     text-transform: uppercase;
@@ -164,9 +252,11 @@
     font-family: "Montserrat";
     font-weight: 400;
     text-align: center;
+    margin-top: 26px;
 }
 .team-pos {
     font-size: 15px;
+    margin-top: 10px;
     color: #999999;
     font-family: "Roboto";
     font-weight: 300;
@@ -200,6 +290,7 @@
 }
 .form {
     display: flex;
+    padding-bottom: 10px;
 }
 .email {
     width: 230px;
