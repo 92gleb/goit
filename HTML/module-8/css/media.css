@@ -1,0 +1,77 @@
+@media (min-width: 768px) {
+    .wrapper {
+        min-width: 768px;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        top: 2.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 670px;
+        margin-bottom: 9.2rem;
+    }
+    .logo {
+        width: auto;
+        margin-top: 0;
+    }
+    .title {
+        font-size: 52px;
+        width: 520px;
+        margin: 0 auto 2.2rem;
+    }
+    .sub-title {
+        font-size: 24px;
+        width: 100%;
+        margin: 0 auto 2.1rem;
+    }
+    .find-partner {
+        width: 225px;
+    }
+    .title-partner {
+        width: auto;
+        margin: 4.5rem auto 1.7rem;
+    }
+    .list {
+        width: 500px;
+        height: 560px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .item {
+        width: 236px;
+    }
+    .item:nth-child(odd) {
+        margin-bottom: 3.6rem;
+    }
+    .item:nth-child(even) {
+        margin-bottom: 2.2rem;
+    }
+    .more {
+        width: 192px;
+        margin-bottom: 2.4rem;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        min-width: 1200px;
+    }
+    .nav {
+        width: 940px;
+    }
+    .list {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .item {
+        margin-bottom: 2.2rem;
+    }
+    .more {
+        margin-bottom: 4.6rem;
+    }
+}

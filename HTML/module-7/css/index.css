@@ -213,7 +213,7 @@ section {
 .form > [required]:valid {
     outline: 1px solid rgb(0, 255, 0);
 }
-.form > [required]:invalid {
+.form > [required]:not(:empty):invalid {
     outline: 1px solid rgb(255, 0, 0);
 }
 .submit {
